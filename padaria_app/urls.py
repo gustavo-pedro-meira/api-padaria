@@ -3,7 +3,7 @@ from . import views
 
 urlpatterns = [
     path('', views.home),
-    path("create", views.CreateView.as_view(), name='padaria_create'),
+    path("create", views.PadariaCreate.as_view(), name='padaria_create'),
     path('view/<int:pk>', views.PadariaDetail.as_view(), name='padaria_view'),
     path('list', views.PadariaList.as_view(), name='padaria_list'),
     path('edit/<int:pk>', views.PadariaUpdate.as_view(), name='padaria_edit'),
